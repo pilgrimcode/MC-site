@@ -1,0 +1,196 @@
+
+body {
+	background-color: white;
+	color: white;
+	background: url(../images/header.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Changa', sans-serif;
+}
+
+header {
+	height: auto;
+	min-height: 20px;
+	max-height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;  
+	color: white;
+}
+
+.nom_serveur {
+	margin-left: 20px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5vmin;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.logo_serveur {
+	height: 100px;
+	width: 100px;
+	margin-top: 20px;
+}
+
+.nom_logo_serveur{
+	display: flex;
+	align-items: center;
+}
+ 
+.header_button:hover {
+	transition: ease-out 0.5s;
+	/* background-color: #919897; */
+	background-color: #3A3B3B;
+	color: white;
+}
+
+.header_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+	min-width: 50px;
+	height: auto;
+	min-height: 20px;
+	max-height: 40px;
+	margin-right: 10px; 
+	padding: 5px;
+	color: black;
+	font-size: 2vmin; 
+	letter-spacing: 3px;
+	text-decoration: none;
+	/* background: linear-gradient(90deg,#0512DF,#1FDCE4); */
+	background: #BBC2C1;
+	border: none;
+	border-radius: 3rem;
+}
+
+.header_div_button {
+	display: flex;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.section_accueil {
+	text-decoration: none;
+	height: auto;
+	min-height: 40px;
+	max-height: 450px; 
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.section_accueil_titre {
+	margin-top: 80px;
+	letter-spacing: 2px;
+	font-size: 3vmin;
+}
+
+.section_accueil_texte {
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 50px;
+	font-size: 2vmin;
+}
+
+.actualites_nb_joueur {
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	background: no-repeat;
+	justify-content: center;
+}
+
+
+.actualites_section {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;  
+	background-color: rgba(145, 152, 151, 0.6); 
+	width: 30%;
+	min-width: 300px;
+	height: auto;
+	min-height: 300px;
+	margin-top: 60px; 
+	margin-left: 30px;
+	margin-right: 30px;
+	background-repeat: no-repeat; 
+}
+
+.actualites_nb_joueur p {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	margin: 2vh;
+}
+
+.actu{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.section_actu {
+	margin-top: 9vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.actu_titre {
+	font-size: 4.5vmin;
+	letter-spacing: 2px;
+}
+
+/* Animation pour les boutons du header */
+
+span {
+	position: absolute;
+	background: #fff;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	border-radius: 50%;
+	animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		width: 0px;
+		height: 0px;
+		opacity: 0.3;
+	}
+
+	100% {
+		width: 500px;
+		height: 500px;
+		opacity: 0.3; 
+	}
+}
+
+/* Permet de gèrer le responsive */
+
+@media screen and (max-width: 1050px) {
+	.actu {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.actualites_section {
+		width: 80%;
+	}
+
+	.logo_serveur {
+		height: 65px;
+		width: 65px;
+	}
+}
